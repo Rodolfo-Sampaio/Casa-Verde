@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produto | Casa Verde</title>
+        <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/base/base.css">
+        <link rel="stylesheet" href="assets/css/componentes/cabecalho.css">
+        <link rel="stylesheet" href="assets/css/comprar.css">
+        <link rel="stylesheet" href="assets/css/componentes/produto.css">
+        <link rel="stylesheet" href="assets/css/componentes/input.css">
+        <link rel="stylesheet" href="assets/css/componentes/botoes.css">
+        <link rel="stylesheet" href="assets/css/componentes/cartao.css">
+        <link rel="stylesheet" href="assets/css/componentes/descricao.css">
+        <link rel="stylesheet" href="assets/css/componentes/snackbar.css">
+        <link rel="stylesheet" href="assets/css/componentes/modal.css">
+        <link rel="stylesheet" href="assets/css/componentes/rodape.css">
+    </head>
+    <body>
+        <header class="cabecalho container">
+            <a href="index.html"><img src="assets/img/logo.svg" alt="Logo da Casa Verde" class="cabecalho__logo"></a>
+            <a href="#" aria-label="Meu carrinho de compras">
+                <img src="assets/img/icones/carrinho.svg" alt="Ícone do carrinho de compras" id="myBtn" class="cabecalho__carrinho"></a>
+
+            <span id="myModal" class=" modal ">
+                <div class="modal-content">         
+                    <section class="container carrinho">
+                        <span class="titulo--destaque">Meu carrinho</span>
+                        <img src="assets/img/icones/fechar.svg" alt="Fecha carrinho de compras" class="close">         
+                    </section>    
+                    <ul>
+                        <li class="container produto__carrinho">
+                            <img src="assets/img/produto-carrinho-02.png" alt="Foto produto no carrinho" class="foto-produto">
+                            <div class="produto__carrinho-detalhes">
+                                <div class="nome_produto">
+                                    <h2 class="titulo-carrinho">Cordyline fruticosa</h2>
+                                    <img src="assets/img/icones/fechar.svg" alt="Fecha carrinho de compras"> 
+                                </div>
+                                <div class="preco__quant">
+                                    <p class="produto__preco-carrinho">R$20,00</p>
+                                    <div class="quantidade">
+                                        <p>1 qtd</p>
+                                        <img src="assets/img/icones/chevron.svg" alt="Muda Quantidade">
+                                    </div>
+                                </div>
+                            </div>            
+                        </li>
+                        <li class="container produto__carrinho">
+                            <img src="assets/img/produto-carrinho-02.png" alt="Foto produto no carrinho" class="foto-produto">
+                            <div class="produto__carrinho-detalhes">
+                                <div class="nome_produto">
+                                    <h2 class="titulo-carrinho">Cordyline fruticosa</h2>
+                                    <img src="assets/img/icones/fechar.svg" alt="Fecha carrinho de compras"> 
+                                </div>
+                                <div class="preco__quant">
+                                    <p class="produto__preco-carrinho">R$20,00</p>
+                                    <div class="quantidade">
+                                        <p>1 qtd</p>
+                                        <img src="assets/img/icones/chevron.svg" alt="Muda Quantidade">
+                                    </div>
+                                </div>
+                            </div>            
+                        </li>
+                        <li class="container produto__carrinho">
+                            <img src="assets/img/produto-carrinho-02.png" alt="Foto produto no carrinho" class="foto-produto">
+                            <div class="produto__carrinho-detalhes">
+                                <div class="nome_produto">
+                                    <h2 class="titulo-carrinho">Cordyline fruticosa</h2>
+                                    <img src="assets/img/icones/fechar.svg" alt="Fecha carrinho de compras"> 
+                                </div>
+                                <div class="preco__quant">
+                                    <p class="produto__preco-carrinho">R$20,00</p>
+                                    <div class="quantidade">
+                                        <p>1 qtd</p>
+                                        <img src="assets/img/icones/chevron.svg" alt="Muda Quantidade">
+                                    </div>
+                                </div>
+                            </div>            
+                        </li>
+                    </ul>
+                    <div class="valor__produtos">
+                        <div>
+                            <p>Valor dos produtos</p>
+                            <p>R$60,00</p>
+                        </div>
+                        <div>
+                            <p>Taxa de entrega</p>
+                            <p>R$10,00</p>
+                        </div>
+                        <div class="titulo-carrinho">
+                            <p>Subtotal</p>
+                            <p>R$70,00</p>
+                        </div>
+                        <a href="pagamento_mobile.html"><button  class="botao">Finalizar compra</button></a>
+                    </div>
+                </div>
+            </span>
+        </header>
+        <main>
+            <section class="comprar container">
+                <span class="titulo--destaque">Cordyline fruticosa</span>
+                <p class="produto__preco">R$ 20,00</p>
+                <p class="comprar__texto texto">Sed arcu risus, posuere viverra imperdiet eu, commodo interdum enim. Suspendisse finibus, quam dictum vestibulum tristique, nisi lectus luctus tellus, eget faucibus</p>
+                <img src="assets/img/Detalhe-do-produto-02.png" alt="Foto do Produto">
+                <button class="botao">Comprar agora</button>
+                <button class="botao botao--alternativo" onclick="myFunction()">Adicionar ao carrinho</button>
+                <div class="snackbar">
+                    <div id="snackbar" >
+                        <p class="texto texto__add">Produto adicionado ao carrinho</p>
+                        <a href="pagamento_mobile.html"><p class="texto texto__pagamento">Ir para o pagamento</p></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="descricao cartao">
+                <span class="titulo--destaque descricao__titulo">Descrição do produto</span>
+                <input type="checkbox" id="leia-mais" class="descricao__botao">
+                <p class="descricao__texto texto texto__menos">É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de...</p>
+                <p class="descricao__texto texto texto__mais">É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui",</p>
+                <label for="leia-mais" class="invisivel">
+                    <p class="descricao__leiamais texto">Leia mais</p>                
+                </label>      
+                <label for="leia-mais" class="visivel">
+                    <p class="descricao__leiamais texto">Leia menos</p>                
+                </label>      
+            </section>
+
+            <section class="ofertas container">
+                <h2 class="titulo alinhamento--meio">
+                    Conheça nossos
+                    <span class="titulo--destaque">produtos</span>
+                </h2>
+                <ul>
+                    <li class="produto">
+                        <img src="assets/img/produto-04.png" alt="Foto do produto" class="produto__imagem">
+                        <div class="produto__conteudo">
+                            <h3 class="produto__titulo titulo--destaque">Cyperus rotundus</h3>
+                            <p class="produto__preco">R$ 20,00</p>
+                            <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
+                        </div>
+                    </li>
+                    <li class="produto">
+                        <img src="assets/img/produto-05.png" alt="Foto do produto" class="produto__imagem">
+                        <div class="produto__conteudo">
+                            <h3 class="produto__titulo titulo--destaque">Delairea odorata</h3>
+                            <p class="produto__preco">R$ 20,00</p>
+                            <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
+                        </div>
+                    </li>
+                    <li class="produto">
+                        <img src="assets/img/produto-06.png" alt="Foto do produto" class="produto__imagem">
+                        <div class="produto__conteudo">
+                            <h3 class="produto__titulo titulo--destaque">Datura metel</h3>
+                            <p class="produto__preco">R$ 20,00</p>
+                            <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+
+        </main>
+        
+        <footer class="container rodape">
+            <img src="assets/img/logo.svg" alt="Logo da Casa Verde#" class="rodape__logo">
+            <ul class="rodape__social">
+                <li><a href="#" class="rodape__social-midia" title="Facebook"><img src="assets/img/icones/facebook.svg" alt="Ícone do facebook"></a></li>
+                <li><a href="#" class="rodape__social-midia" title="Twitter"><img src="assets/img/icones/twitter.svg" alt="Ícone do twitter"></a></li>
+                <li><a href="#" class="rodape__social-midia" title="Instagram"><img src="assets/img/icones/instagram.svg" alt="Ícone do instagram"></a></li>
+            </ul>
+            <address class="rodape__unidade texto">
+                <span class="rodape__unidade-titulo">Rio de Janeiro</span>
+                Rua Siqueira Campos, 171, 303<br>
+                Copacabana<br>
+                Telefone: (21) 99876-0099
+            </address>
+            <address class="rodape__unidade texto">
+                <span class="rodape__unidade-titulo">São Paulo</span>
+                Rua Anita Garibaldi, 33, 13<br>
+                Sé<br>
+                Telefone: (11) 99875-2201
+            </address>
+        </footer>
+    </body>
+    <script src="assets/js/snackbar.js"></script>
+    <script src="assets/js/modal_carrinho.js"></script>
+</html>

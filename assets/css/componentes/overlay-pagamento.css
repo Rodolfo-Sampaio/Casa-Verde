@@ -1,0 +1,51 @@
+.overlay {
+    background-color: var(--branco) ;
+    text-align: center;
+    margin: 0 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    background-image: url(../../img/splash-concluido.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    width: 290px;
+    
+}
+
+.overlay-texto {
+    padding-bottom: 1.5rem;
+}
+
+.overlay--ilustracao {
+    width: 7.5rem;
+}
+
+#myoverlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 2;
+    cursor: pointer;
+       
+    
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    animation-name: animatetop;
+    animation-duration: .4s;
+}
+
+@keyframes animatetop {
+    from { opacity:0} 
+    to { opacity:1}
+}

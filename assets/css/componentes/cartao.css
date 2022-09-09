@@ -1,0 +1,22 @@
+.cartao {
+    box-sizing: border-box;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    background-color: var(--branco);
+
+    box-shadow: 10px 10px 30px var(--preto-transparente);
+}
+
+.cartao_resumo {
+    box-sizing: border-box;
+
+    padding: 1rem;
+    
+    margin: 1rem 1rem 3rem 1rem;
+
+    background-color: var(--branco);
+
+    box-shadow: 10px 10px 30px var(--preto-transparente);
+}

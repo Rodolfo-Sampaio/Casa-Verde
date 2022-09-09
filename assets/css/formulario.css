@@ -1,0 +1,18 @@
+.fomulario {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2.5rem 0;
+    justify-content: space-between;
+}
+
+
+.legenda {
+    color: var(--preto);
+    font-size: var(--tamanho-corpo);
+    margin: 1rem 0;
+}
+
+.half {
+    width: calc(50% - .5rem);
+}
+

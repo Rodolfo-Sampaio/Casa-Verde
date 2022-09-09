@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagamento | Casa Verde</title>
+        <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/base/base.css">
+        <link rel="stylesheet" href="assets/css/componentes/cabecalho.css">
+        <link rel="stylesheet" href="assets/css/componentes/input.css">
+        <link rel="stylesheet" href="assets/css/componentes/botoes.css">
+        <link rel="stylesheet" href="assets/css/componentes/produto.css">
+        <link rel="stylesheet" href="assets/css/componentes/modal.css">
+        <link rel="stylesheet" href="assets/css/componentes/overlay-pagamento.css">        
+        <link rel="stylesheet" href="assets/css/componentes/cartao.css">
+        <link rel="stylesheet" href="assets/css/formulario.css">
+        <link rel="stylesheet" href="assets/css/componentes/rodape.css">
+    </head>
+    <body>
+        <header class="cabecalho container">
+            <a href="index.html"><img src="assets/img/logo.svg" alt="Logo da Casa Verde" class="cabecalho__logo"></a>
+            <a href="#" aria-label="Meu carrinho de compras">
+                <img src="assets/img/icones/carrinho.svg" alt="Ícone do carrinho de compras" id="myBtn" class="cabecalho__carrinho"></a>
+
+            <span id="myModal" class=" modal ">
+                <div class="modal-content">         
+                    <section class="container carrinho">
+                        <span class="titulo--destaque">Meu carrinho</span>
+                        <img src="assets/img/icones/fechar.svg" alt="Fecha carrinho de compras" class="close">         
+                    </section>    
+                    <ul>
+                        <li class="container produto__carrinho">
+                            <img src="assets/img/produto-carrinho-02.png" alt="Foto produto no carrinho" class="foto-produto">
+                            <div class="produto__carrinho-detalhes">
+                                <div class="nome_produto">
+                                    <h2 class="titulo-carrinho">Cordyline fruticosa</h2>
+                                    <img src="assets/img/icones/fechar.svg" alt="Fecha carrinho de compras"> 
+                                </div>
+                                <div class="preco__quant">
+                                    <p class="produto__preco-carrinho">R$20,00</p>
+                                    <div class="quantidade">
+                                        <p>1 qtd</p>
+                                        <img src="assets/img/icones/chevron.svg" alt="Muda Quantidade">
+                                    </div>
+                                </div>
+                            </div>            
+                        </li>
+                        <li class="container produto__carrinho">
+                            <img src="assets/img/produto-carrinho-02.png" alt="Foto produto no carrinho" class="foto-produto">
+                            <div class="produto__carrinho-detalhes">
+                                <div class="nome_produto">
+                                    <h2 class="titulo-carrinho">Cordyline fruticosa</h2>
+                                    <img src="assets/img/icones/fechar.svg" alt="Fecha carrinho de compras"> 
+                                </div>
+                                <div class="preco__quant">
+                                    <p class="produto__preco-carrinho">R$20,00</p>
+                                    <div class="quantidade">
+                                        <p>1 qtd</p>
+                                        <img src="assets/img/icones/chevron.svg" alt="Muda Quantidade">
+                                    </div>
+                                </div>
+                            </div>            
+                        </li>
+                        <li class="container produto__carrinho">
+                            <img src="assets/img/produto-carrinho-02.png" alt="Foto produto no carrinho" class="foto-produto">
+                            <div class="produto__carrinho-detalhes">
+                                <div class="nome_produto">
+                                    <h2 class="titulo-carrinho">Cordyline fruticosa</h2>
+                                    <img src="assets/img/icones/fechar.svg" alt="Fecha carrinho de compras"> 
+                                </div>
+                                <div class="preco__quant">
+                                    <p class="produto__preco-carrinho">R$20,00</p>
+                                    <div class="quantidade">
+                                        <p>1 qtd</p>
+                                        <img src="assets/img/icones/chevron.svg" alt="Muda Quantidade">
+                                    </div>
+                                </div>
+                            </div>            
+                        </li>
+                    </ul>
+                    <div class="valor__produtos">
+                        <div>
+                            <p>Valor dos produtos</p>
+                            <p>R$60,00</p>
+                        </div>
+                        <div>
+                            <p>Taxa de entrega</p>
+                            <p>R$10,00</p>
+                        </div>
+                        <div class="titulo-carrinho">
+                            <p>Subtotal</p>
+                            <p>R$70,00</p>
+                        </div>
+                        <a href="pagamento_mobile.html"><button class="botao">Finalizar compra</button></a>
+                    </div>
+                </div>
+            </span>
+        </header>
+
+        <main>
+            <div class="cartao_resumo">
+               
+                    <span class="titulo--destaque alinhamento--meio" >Resumo do pedido</span>
+                 
+                <ul>
+                    <li class="produto__carrinho resumo">
+                        <img src="assets/img/produto-carrinho-02.png" alt="Foto produto no carrinho" class="foto-produto">
+                        <div class="produto__carrinho-detalhes">
+                            <div class="nome_produto">
+                                <h2 class="titulo-carrinho">Cordyline fruticosa</h2>
+                                <img src="assets/img/icones/fechar.svg" alt="Fecha carrinho de compras"> 
+                            </div>
+                            <div class="preco__quant">
+                                <p class="produto__preco-carrinho">R$20,00</p>
+                                <div class="quantidade">
+                                    <p>1 qtd</p>
+                                    <img src="assets/img/icones/chevron.svg" alt="Muda Quantidade">
+                                </div>
+                            </div>
+                        </div>            
+                    </li>
+                    <li class="produto__carrinho resumo">
+                        <img src="assets/img/produto-carrinho-02.png" alt="Foto produto no carrinho" class="foto-produto">
+                        <div class="produto__carrinho-detalhes">
+                            <div class="nome_produto">
+                                <h2 class="titulo-carrinho">Cordyline fruticosa</h2>
+                                <img src="assets/img/icones/fechar.svg" alt="Fecha carrinho de compras"> 
+                            </div>
+                            <div class="preco__quant">
+                                <p class="produto__preco-carrinho">R$20,00</p>
+                                <div class="quantidade">
+                                    <p>1 qtd</p>
+                                    <img src="assets/img/icones/chevron.svg" alt="Muda Quantidade">
+                                </div>
+                            </div>
+                        </div>            
+                    </li>
+                    <li class="produto__carrinho resumo">
+                        <img src="assets/img/produto-carrinho-02.png" alt="Foto produto no carrinho" class="foto-produto">
+                        <div class="produto__carrinho-detalhes">
+                            <div class="nome_produto">
+                                <h2 class="titulo-carrinho">Cordyline fruticosa</h2>
+                                <img src="assets/img/icones/fechar.svg" alt="Fecha carrinho de compras"> 
+                            </div>
+                            <div class="preco__quant">
+                                <p class="produto__preco-carrinho">R$20,00</p>
+                                <div class="quantidade">
+                                    <p>1 qtd</p>
+                                    <img src="assets/img/icones/chevron.svg" alt="Muda Quantidade">
+                                </div>
+                            </div>
+                        </div>            
+                    </li>
+                </ul>
+                <div class="valor__produtos resumo">
+                    <div>
+                        <p>Valor dos produtos</p>
+                        <p>R$60,00</p>
+                    </div>
+                    <div>
+                        <p>Taxa de entrega</p>
+                        <p>R$10,00</p>
+                    </div>
+                    <div class="titulo-carrinho">
+                        <p>Subtotal</p>
+                        <p>R$70,00</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="comprar container">
+                <span class="titulo--destaque">Finalizar pedido</span>
+                <p class="comprar__texto texto">Insira suas informações abaixo e você receberá um e-mail com os detalhes da sua compra. Assim que o pagamento for processado você receberá seu produto em sua casa em até 7 dias úteis.</p>
+            </section>
+
+            <form class="container fomulario">
+                <legend class="legenda">Informações</legend>                
+                    <input type="text" class="input" placeholder="Nome"  aria-label="Nome">
+                    <input type="email" class="input" placeholder="E-mail"  aria-label="E-mail">
+                <legend class="legenda">Endereço de entrega</legend>
+                    <input type="number" class="input" placeholder="CEP"  aria-label="CEP">
+                    <input type="text" class="input" placeholder="Rua / Avenida"  aria-label="Rua / Avenida">
+                    <input type="number" class="input half" placeholder="Número"  aria-label="Número">
+                    <input type="text" class="input half" placeholder="Complemento" aria-label="Complemento">
+                    <input type="text" class="input half" placeholder="Cidade"  aria-label="Cidade">
+                    <input type="text" class="input half" placeholder="Estado"  aria-label="Estado">
+                <legend class="legenda">Pagamento</legend>
+                    <input type="number" class="input" placeholder="Número do cartão"  aria-label="Número do cartão">
+                    <input type="text" class="input" placeholder="Nome do titular do cartão"  aria-label="Nome do titular do cartão">
+                    <input placeholder="Validade" class="input half" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  aria-label="Validade do cartão"/>
+                    <input type="number" class="input half" placeholder="CVV"  aria-label="CVV">
+                    <input type="number" class="input" placeholder="CPF do titular do cartão"  aria-label="CPF do titular do cartão">
+                    <input type="number" class="input" placeholder="Número de parcelas" aria-label="Número de parcelas" required>
+                <button type="submit" value="Enviar Formulário" class="botao" id="myBtn2">Finalizar pagamento</button>
+                              
+            </form>
+
+            <div id="myoverlay">  
+                <div id="text">
+                    <div  class="container overlay">
+                        <img src="assets/img/ilustração_pedido_concluido.svg" alt="Ilustração pedido concluído" class="overlay--ilustracao closeoverlay">         
+                        <h2 class="titulo--destaque alinhamento--meio">Pedido concluído com sucesso</h2>
+                        <p class="texto overlay-texto alinhamento--meio">Seu pedido foi efetuado com sucesso. Fique de olho no seu e-mail que você receberá uma mensagem com os detalhes da sua compra. Seu pedido chegará em sua casa em até 7 dias úteis.</p>
+                        <a href="index.html"><button class="botao">Voltar para a tela inicial</button></a>                    
+                        
+                    </div>
+                </div>       
+            </div>                
+
+        </main>    
+
+        <footer class="container rodape">
+            <img src="assets/img/logo.svg" alt="Logo da Casa Verde#" class="rodape__logo">
+            <ul class="rodape__social">
+                <li><a href="#" class="rodape__social-midia" title="Facebook"><img src="assets/img/icones/facebook.svg" alt="Ícone do facebook"></a></li>
+                <li><a href="#" class="rodape__social-midia" title="Twitter"><img src="assets/img/icones/twitter.svg" alt="Ícone do twitter"></a></li>
+                <li><a href="#" class="rodape__social-midia" title="Instagram"><img src="assets/img/icones/instagram.svg" alt="Ícone do instagram" ></a></li>
+            </ul>
+            <address class="rodape__unidade texto">
+                <span class="rodape__unidade-titulo">Rio de Janeiro</span>
+                Rua Siqueira Campos, 171, 303<br>
+                Copacabana<br>
+                Telefone: (21) 99876-0099
+            </address>
+            <address class="rodape__unidade texto">
+                <span class="rodape__unidade-titulo">São Paulo</span>
+                Rua Anita Garibaldi, 33, 13<br>
+                Sé<br>
+                Telefone: (11) 99875-2201
+            </address>
+        </footer>
+        
+    </body>
+    
+    <script src="assets/js/modal_carrinho.js"></script>
+    <script src="assets/js/overlay_pagamento.js"></script>
+
+</html>

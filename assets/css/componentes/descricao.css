@@ -1,0 +1,36 @@
+.descricao {
+    margin: 3rem 0;
+}
+
+.descricao__titulo {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.25rem;
+}
+
+.descricao__texto {
+    padding-left: 1rem;
+    padding-right: 1rem;    
+}
+
+.descricao__leiamais {
+    color: var(--amarelo);
+    padding-left: 1rem;
+}
+
+.descricao .texto__mais {
+    display: none;
+}
+
+.descricao__botao:checked ~ .texto__menos, .descricao__botao:checked ~ .invisivel {
+    display: none;
+}
+.descricao__botao:checked ~ .texto__mais, .descricao__botao:checked ~ .visivel {
+    display: block;
+}
+
+.descricao .visivel, .descricao__botao {
+    display: none;
+}
