@@ -1,18 +1,46 @@
 @import url(_variaveis.css);
 @import url(_reset.css);
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--familia-corpo);
     font-size: var(--tamanho-corpo);
     color: var(--cinza);
 
     background: url(../../img/fundo-textura.png), url(../../img/fundo-linhas.png);
-    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover, auto;    
 }
+
 
 .container {
     padding-right: 1rem;
     padding-left: 1rem;
+}
+
+.centro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;    
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background: url(../../img/splash-depoimento.svg), 
+                    url(../../img/splash-chamada1200.svg), 
+                    url(../../img/fundo-linhas.png), 
+                    url(../../img/fundo-textura.png);
+        background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+        background-size: 600px 600px, auto, auto, cover;
+        background-position: top 2100px left -100px, left 100% top 0, 0, 0;
+    }
+    .centro {
+        width: 1200px;
+    }    
 }
 
 .titulo {
@@ -29,6 +57,12 @@ body {
 
     margin-top: .75rem;
     margin-bottom: .75rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .titulo--destaque {
+        font-size: var(--tamanho-titulo-destaque-desk);
+    }
 }
 
 .alinhamento--esquerda {

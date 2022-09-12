@@ -6,13 +6,13 @@
 }
 
 
-.legenda {
+.formulario__legenda {
     color: var(--preto);
     font-size: var(--tamanho-corpo);
     margin: 1rem 0;
 }
 
-.half {
+.input half {
     width: calc(50% - .5rem);
 }
 

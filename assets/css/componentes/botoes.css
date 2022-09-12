@@ -14,14 +14,6 @@
     box-shadow: 10px 10px 30px var(--amarelo-transparente);
     border: none;
     cursor: pointer;
-    transition: .5s;
-
-}
-
-.botao:hover {
-    background-color: var(--amarelo-hover);
-    transition: .5s;
-
 }
 
 .botao--alternativo {
@@ -36,10 +28,24 @@
     font-size: 1rem;
     margin-top: 1rem;
     cursor: pointer;
-    transition: .5s;
 }
 
-.botao--alternativo:hover {
-    background-color: var(--branco);
-    transition: .5s;
+@media screen and (min-width: 1200px) {
+
+    .botao {
+        transition: .5s;
+    }
+    .botao--alternativo {
+        transition: .5s;
+    }
+    
+    .botao:hover {
+        background-color: var(--amarelo-hover);
+        transition: .5s;
+    }
+        
+    .botao--alternativo:hover {
+        background-color: var(--branco);
+        transition: .5s;
+    }
 }

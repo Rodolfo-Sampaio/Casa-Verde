@@ -1,0 +1,85 @@
+.depoimento {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .depoimento {
+        display: block;
+        margin-bottom: 100px;
+    }
+    
+    .depoimento__centro {
+        display: flex;
+        width: 1200px;
+        margin: auto;
+        margin-top: 100px;
+        justify-content: space-between;
+
+    }
+    .depoimento__imagem {
+        width: 481px;
+    }
+
+    .depoimento--titulo {
+        margin-top: 80px;
+    }
+
+    .depoimento__nome {
+        font-size: var(--tamanho-destaque);
+        color: var(--preto);
+        padding-left: 100px;
+    }
+
+     .depoimento-texto {
+        width: 590px;
+        position: relative; 
+        padding-left: 100px;
+        margin-top: 2rem;        
+    }
+
+    .depoimento-texto-desde {
+        padding-left: 100px;
+        margin-top: 1rem;  
+    }
+
+    .depoimento-texto::before{
+        content: "";
+        background-image: url(../img/icones/depoimento-icone.svg);
+        background-size: cover;
+        position: absolute;
+        height: 72px;
+        width: 72px;
+        left: 0;
+    }
+
+    .depoimento__voltar--icone {
+        display: inline-block;
+
+        width: 0.875rem;
+        height: 0.875rem;
+
+        margin-left: 1.75rem ;
+        background-image: url(../img/icones/seta-depoimento-esquerda.svg);
+        background-size: contain;
+    }
+    
+    .depoimento__proximo--icone {
+        display: inline-block;
+        
+        width: 71px;
+        height: 14px;
+        
+        margin-left: 1.75rem ;
+        background-image: url(../img/icones/seta-depoimento-direita.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .depoimento__alinhamento {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}

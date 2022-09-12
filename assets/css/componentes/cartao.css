@@ -20,3 +20,38 @@
 
     box-shadow: 10px 10px 30px var(--preto-transparente);
 }
+
+.cartao__imagem {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .cartao {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;    
+        width: 62.5rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .cartao__imagem {
+        display: block;
+        width: auto;
+    }
+
+    .cartao__desk {
+        width: 25rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .cartao__desk p {
+        font-size: 22px;
+    }
+
+    
+
+}

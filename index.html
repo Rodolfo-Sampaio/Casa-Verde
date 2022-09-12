@@ -17,14 +17,29 @@
         <link rel="stylesheet" href="assets/css/componentes/produto.css">
         <link rel="stylesheet" href="assets/css/ofertas.css">
         <link rel="stylesheet" href="assets/css/componentes/modal.css">
+        <link rel="stylesheet" href="assets/css/depoimento.css">
         <link rel="stylesheet" href="assets/css/componentes/video.css">    
         <link rel="stylesheet" href="assets/css/componentes/rodape.css">
     </head>
     <body>
         <header class="cabecalho container">
-            <a href="index.html"><img src="assets/img/logo.svg" alt="Logo da Casa Verde" class="cabecalho__logo"></a>
-            <a href="#" aria-label="Meu carrinho de compras">
-                <img src="assets/img/icones/carrinho.svg" alt="Ícone do carrinho de compras" id="myBtn" class="cabecalho__carrinho"></a>
+            <div class="centro"> 
+                <a href="index.html"><img src="assets/img/logo.svg" alt="Logo da Casa Verde" class="cabecalho__logo"></a>
+                <a href="#" aria-label="Meu carrinho de compras">
+                    <img src="assets/img/icones/carrinho.svg" alt="Ícone do carrinho de compras" id="myBtn2" class="cabecalho__carrinho">
+                </a>
+
+                <nav class="cabecalho__menu">
+                    <ul class="menu__list">
+                        <li class="menu__links"><a href="#" class="menu__link">Como fazer</a></li>
+                        <li class="menu__links"><a href="#produtos" class="menu__link">Produtos</a></li>
+                        <li class="menu__links"><a href="#depoimentos" class="menu__link">Depoimentos</a></li>
+                        <li class="menu__links"><a href="#videos" class="menu__link">Vídeos</a></li>
+                        <li class="menu__links"><a href="#" class="menu__link" id="myBtn">Meu carrinho</a></li>
+                    </ul>
+                </nav>
+            </div>
+                       
 
             <span id="myModal" class=" modal ">
                 <div class="modal-content">         
@@ -95,150 +110,191 @@
                             <p>Subtotal</p>
                             <p>R$70,00</p>
                         </div>
-                        <a href="pagamento_mobile.html"><button  class="botao">Finalizar compra</button></a>
+                        <a href="pagamento_mobile.html"><button  class="botao modal__botao">Finalizar compra</button></a>
                     </div>
                 </div>
             </span>
         </header>
-        <main>
-            <section class="chamada container">
-                <h2 class="titulo">
-                    Sua casa com as
-                    <span class="titulo--destaque">melhores plantas</span>
-                </h2>
-                <p class="chamada__texto texto">Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca</p>
-                <img src="assets/img/Planta-chamada.png" alt="Foto do produto" class="chamada__imagem">
-                <form action="#" class="chamada__formulario">
-                    <input type="text" class="input input--icone input--email" placeholder="Insira seu e-mail" aria-label="Insira seu e-mail">
-                    <button class="botao">Assinar newsletter</button>
-                </form>
-            </section>
-            <section class="como-conseguir container">
-                <article class="cartao">
-                    <h2 class="titulo alinhamento--meio">Como conseguir
-                        <span class="titulo--destaque">minha planta</span>
+
+        
+            <main>
+                <section class="chamada container">
+                    <div class="centro">                        
+                        <div class="chamada__position">
+                            <h2 class="titulo">
+                                Sua casa com as
+                                <span class="titulo--destaque">melhores plantas</span>
+                            </h2>
+                            <p class="chamada__texto texto">Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca</p>
+                            <form action="#" class="chamada__formulario">
+                                <input type="text" class="input input--icone input--email" placeholder="Insira seu e-mail" aria-label="Insira seu e-mail">
+                                <button class="botao">Assinar newsletter</button>
+                            </form>
+                        </div>
+                        <img src="assets/img/Planta-chamada.png" alt="Foto do produto" class="chamada__imagem">
+                    </div>
+                </section>
+                <section class="como-conseguir container">
+                    <article class="cartao">
+                        <img src="assets/img/image-minha-planta.png" alt="Imagem Minha Planta" class="cartao__imagem">
+                        <div class="cartao__desk">
+                            <h2 class="titulo alinhamento--meio">Como conseguir
+                                <span class="titulo--destaque">minha planta</span>
+                            </h2>
+                            <ul class="lista">
+                                <li class="lista__item">
+                                    <span class="item__icone item__icone--cursor"></span>
+                                    <p>Escolha suas plantas</p>
+                                </li>
+                                <li class="lista__item">
+                                    <span class="item__icone item__icone--carrinho"></span>
+                                    <p>Faça seu pedido</p>
+                                </li>
+                                <li class="lista__item">
+                                    <span class="item__icone item__icone--caminhao"></span>
+                                    <p>Aguarde na sua casa</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="ofertas container" id="produtos">
+                    <div class="oferta__centro">
+                        <h2 class="titulo alinhamento--meio">
+                            Conheça nossos
+                            <span class="titulo--destaque titulo--destaque-desk">produtos</span>
+                        </h2>
+                        <ul class="oferta__lista">
+                            <li class="produto">                                
+                                <img src="assets/img/produto-01.png" alt="Foto do produto" class="produto__imagem">
+                                <div class="produto__conteudo">
+                                    <h3 class="produto__titulo titulo--destaque">Ajuga reptans</h3>
+                                    <p class="produto__preco">R$ 20,00</p>
+                                    <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
+                                </div>                                
+                            </li>
+                            <li class="produto">
+                                <img src="assets/img/produto-02.png" alt="Foto do produto" class="produto__imagem">
+                                <div class="produto__conteudo">
+                                    <h3 class="produto__titulo titulo--destaque">Cordyline fruticosa</h3>
+                                    <p class="produto__preco">R$ 20,00</p>
+                                    <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
+                                </div>
+                            </li>
+                            <li class="produto">
+                                <img src="assets/img/produto-03.png" alt="Foto do produto" class="produto__imagem">
+                                <div class="produto__conteudo">
+                                    <h3 class="produto__titulo titulo--destaque">Crassula ovata</h3>
+                                    <p class="produto__preco">R$ 20,00</p>
+                                    <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
+                                </div>
+                            </li>
+                            <li class="produto">
+                                <img src="assets/img/produto-04.png" alt="Foto do produto" class="produto__imagem">
+                                <div class="produto__conteudo">
+                                    <h3 class="produto__titulo titulo--destaque">Cyperus rotundus</h3>
+                                    <p class="produto__preco">R$ 20,00</p>
+                                    <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
+                                </div>
+                            </li>
+                            <li class="produto">
+                                <img src="assets/img/produto-05.png" alt="Foto do produto" class="produto__imagem">
+                                <div class="produto__conteudo">
+                                    <h3 class="produto__titulo titulo--destaque">Delairea odorata</h3>
+                                    <p class="produto__preco">R$ 20,00</p>
+                                    <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
+                                </div>
+                            </li>
+                            <li class="produto">
+                                <img src="assets/img/produto-06.png" alt="Foto do produto" class="produto__imagem">
+                                <div class="produto__conteudo">
+                                    <h3 class="produto__titulo titulo--destaque">Datura metel</h3>
+                                    <p class="produto__preco">R$ 20,00</p>
+                                    <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="depoimento container" id="depoimentos">
+                    <div class="depoimento__centro">
+                        <img src="assets/img/img-Julia-ferraz.png" alt="Imagem da Julia Ferraz sorrindo" class="depoimento__imagem">
+                        <div>
+                            <span class="titulo--destaque depoimento--titulo">Não acredite em nós<br>veja o que os clientes tem a dizer</span>
+                            <p class="chamada__texto texto depoimento-texto">Nullam a orci vitae orci fringilla pulvinar sit amet quis felis. Quisque vel ornare arcu. Fusce urna quam, tempus vitae vehicula et, efficitur non sem. Morbi tincidunt congue lorem eu tempor. Nulla bibendum ligula lorem, vel sollicitudin nibh scelerisque non. Proin ut nisi congue, sodales tellus at, consectetur tellus. Praesent ac elit quis purus congue bibendum. Etiam nec massa ac enim vehicula maximus. Pellentesque semper fermentum maximus. Integer dignissim libero felis, id tempor purus viverra non. Quisque sodales non lacus ut tincidunt. Cras in venenatis leo.”</p>
+                            <div class="depoimento__alinhamento">
+                                <div>
+                                    <h3 class="depoimento__nome">Juliana Ferraz</h3>
+                                    <p class="depoimento-texto-desde">Cliente desde 2018</p>
+                                </div>
+                                <div class="depoimentos__setas">
+                                    <a href="#" class="depoimento__voltar"><span class="depoimento__voltar--icone"></span></a>                                
+                                    <a href="#" class="depoimento__proximo"><span class="depoimento__proximo--icone"></span></a>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <section class="container oferta__centro" id="videos">
+                    <h2 class="titulo alinhamento--meio">
+                        Veja aqui os nossos
+                        <span class="titulo--destaque titulo--destaque-desk">vídeos</span>
                     </h2>
-                    <ul class="lista">
-                        <li class="lista__item">
-                            <span class="item__icone item__icone--cursor"></span>
-                            <p>Escolha suas plantas</p>
+                    <ul class="videos_lista">
+                        <li class="cartao-de-video container">
+                            <div class="cartao-de-video__video"><img src="assets/img/img_video-01.png" alt="Capa do vídeo"></div>
+                            <h3 class="cartao-de-video__titulo">Vídeo XYZ</h3>
+                            <p>Publicado em março de 2019</p>
                         </li>
-                        <li class="lista__item">
-                            <span class="item__icone item__icone--carrinho"></span>
-                            <p>Faça seu pedido</p>
+                        <li class="cartao-de-video container">
+                            <div class="cartao-de-video__video"><img src="assets/img/img_video-02.png" alt="Capa do vídeo"></div>
+                            <h3 class="cartao-de-video__titulo">Vídeo XYZ</h3>
+                            <p>Publicado em março de 2019</p>
                         </li>
-                        <li class="lista__item">
-                            <span class="item__icone item__icone--caminhao"></span>
-                            <p>Aguarde na sua casa</p>
+                        <li class="cartao-de-video container">
+                            <div class="cartao-de-video__video"><img src="assets/img/img_video-03.png" alt="Capa do vídeo"></div>
+                            <h3 class="cartao-de-video__titulo">Vídeo XYZ</h3>
+                            <p>Publicado em março de 2019</p>
+                        </li>
+                        <li class="cartao-de-video container">
+                            <div class="cartao-de-video__video"><img src="assets/img/img_video-04.png" alt="Capa do vídeo"></div>
+                            <h3 class="cartao-de-video__titulo">Vídeo XYZ</h3>
+                            <p>Publicado em março de 2019</p>
                         </li>
                     </ul>
-                </article>
-            </section>
-            <section class="ofertas container">
-                <h2 class="titulo alinhamento--meio">
-                    Conheça nossos
-                    <span class="titulo--destaque">produtos</span>
-                </h2>
-                <ul>
-                    <li class="produto">
-                        <img src="assets/img/produto-01.png" alt="Foto do produto" class="produto__imagem">
-                        <div class="produto__conteudo">
-                            <h3 class="produto__titulo titulo--destaque">Ajuga reptans</h3>
-                            <p class="produto__preco">R$ 20,00</p>
-                            <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
-                        </div>
-                    </li>
-                    <li class="produto">
-                        <img src="assets/img/produto-02.png" alt="Foto do produto" class="produto__imagem">
-                        <div class="produto__conteudo">
-                            <h3 class="produto__titulo titulo--destaque">Cordyline fruticosa</h3>
-                            <p class="produto__preco">R$ 20,00</p>
-                            <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
-                        </div>
-                    </li>
-                    <li class="produto">
-                        <img src="assets/img/produto-03.png" alt="Foto do produto" class="produto__imagem">
-                        <div class="produto__conteudo">
-                            <h3 class="produto__titulo titulo--destaque">Crassula ovata</h3>
-                            <p class="produto__preco">R$ 20,00</p>
-                            <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
-                        </div>
-                    </li>
-                    <li class="produto">
-                        <img src="assets/img/produto-04.png" alt="Foto do produto" class="produto__imagem">
-                        <div class="produto__conteudo">
-                            <h3 class="produto__titulo titulo--destaque">Cyperus rotundus</h3>
-                            <p class="produto__preco">R$ 20,00</p>
-                            <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
-                        </div>
-                    </li>
-                    <li class="produto">
-                        <img src="assets/img/produto-05.png" alt="Foto do produto" class="produto__imagem">
-                        <div class="produto__conteudo">
-                            <h3 class="produto__titulo titulo--destaque">Delairea odorata</h3>
-                            <p class="produto__preco">R$ 20,00</p>
-                            <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
-                        </div>
-                    </li>
-                    <li class="produto">
-                        <img src="assets/img/produto-06.png" alt="Foto do produto" class="produto__imagem">
-                        <div class="produto__conteudo">
-                            <h3 class="produto__titulo titulo--destaque">Datura metel</h3>
-                            <p class="produto__preco">R$ 20,00</p>
-                            <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <section class="container">
-                <h2 class="titulo alinhamento--meio">
-                    Veja aqui os nossos
-                    <span class="titulo--destaque">vídeos</span>
-                </h2>
-                <ul>
-                    <li class="cartao-de-video container">
-                        <div class="cartao-de-video__video"><img src="assets/img/img_video-01.png" alt="Capa do vídeo"></div>
-                        <h3 class="cartao-de-video__titulo">Vídeo XYZ</h3>
-                        <p>Publicado em março de 2019</p>
-                    </li>
-                    <li class="cartao-de-video container">
-                        <div class="cartao-de-video__video"><img src="assets/img/img_video-02.png" alt="Capa do vídeo"></div>
-                        <h3 class="cartao-de-video__titulo">Vídeo XYZ</h3>
-                        <p>Publicado em março de 2019</p>
-                    </li>
-                    <li class="cartao-de-video container">
-                        <div class="cartao-de-video__video"><img src="assets/img/img_video-03.png" alt="Capa do vídeo"></div>
-                        <h3 class="cartao-de-video__titulo">Vídeo XYZ</h3>
-                        <p>Publicado em março de 2019</p>
-                    </li>
-                    <li class="cartao-de-video container">
-                        <div class="cartao-de-video__video"><img src="assets/img/img_video-04.png" alt="Capa do vídeo"></div>
-                        <h3 class="cartao-de-video__titulo">Vídeo XYZ</h3>
-                        <p>Publicado em março de 2019</p>
-                    </li>
-                </ul>
-            </section>
-        </main>    
+                </section>
+            </main>
+           
 
         <footer class="container rodape">
-            <img src="assets/img/logo.svg" alt="Logo da Casa Verde#" class="rodape__logo">
-            <ul class="rodape__social">
-                <li><a href="#" class="rodape__social-midia" title="Facebook"><img src="assets/img/icones/facebook.svg" alt="Ícone do facebook"></a></li>
-                <li><a href="#" class="rodape__social-midia" title="Twitter"><img src="assets/img/icones/twitter.svg" alt="Ícone do twitter"></a></li>
-                <li><a href="#" class="rodape__social-midia" title="Instagram"><img src="assets/img/icones/instagram.svg" alt="Ícone do instagram"></a></li>
-            </ul>
-            <address class="rodape__unidade texto">
-                <span class="rodape__unidade-titulo">Rio de Janeiro</span>
-                Rua Siqueira Campos, 171, 303<br>
-                Copacabana<br>
-                Telefone: (21) 99876-0099
-            </address>
-            <address class="rodape__unidade texto">
-                <span class="rodape__unidade-titulo">São Paulo</span>
-                Rua Anita Garibaldi, 33, 13<br>
-                Sé<br>
-                Telefone: (11) 99875-2201
-            </address>
+            <div class="rodape__alinhamento">
+                <div>
+                    <img src="assets/img/logo.svg" alt="Logo da Casa Verde#" class="rodape__logo">
+                    <ul class="rodape__social">
+                        <li><a href="#" class="rodape__social-midia" title="Facebook"><img src="assets/img/icones/facebook.svg" alt="Ícone do facebook"></a></li>
+                        <li><a href="#" class="rodape__social-midia" title="Twitter"><img src="assets/img/icones/twitter.svg" alt="Ícone do twitter"></a></li>
+                        <li><a href="#" class="rodape__social-midia" title="Instagram"><img src="assets/img/icones/instagram.svg" alt="Ícone do instagram"></a></li>
+                    </ul>
+                </div>            
+                <address class="rodape__unidade texto">
+                    <span class="rodape__unidade-titulo">Rio de Janeiro</span>
+                    Rua Siqueira Campos, 171, 303<br>
+                    Copacabana<br>
+                    Telefone: (21) 99876-0099
+                </address>
+                <address class="rodape__unidade texto">
+                    <span class="rodape__unidade-titulo">São Paulo</span>
+                    Rua Anita Garibaldi, 33, 13<br>
+                    Sé<br>
+                    Telefone: (11) 99875-2201
+                </address>
+                <img src="assets/img/Ilustracao-rodape.svg" alt="Ilustração de um jardineiro regando plantas" class="rodape__ilustracao">
+            </div>
         </footer>
         
     </body>

@@ -1,3 +1,31 @@
 .ofertas {
     padding-bottom: 3.9rem;
 }
+
+@media screen and (min-width: 1200px) {
+    .oferta__centro {
+        margin: auto;
+        width: 1200px;        
+    }
+
+    .oferta__lista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .produto {
+        width: 380px;
+        height: 200px;
+        padding-left: 14%;
+        margin-bottom: 2rem;       
+    }
+
+    .titulo--destaque-desk {
+        font-size: 82px;
+        margin-bottom: 2rem;
+    }
+
+   
+}
+
