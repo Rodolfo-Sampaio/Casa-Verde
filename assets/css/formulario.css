@@ -1,4 +1,4 @@
-.fomulario {
+.formulario {
     display: flex;
     flex-wrap: wrap;
     margin: 2.5rem 0;
@@ -12,7 +12,84 @@
     margin: 1rem 0;
 }
 
-.input half {
+.half {
     width: calc(50% - .5rem);
 }
 
+@media screen and (min-width: 1200px) {
+    .formulario__resumo {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        margin-top: 4rem;
+        align-items: flex-start;
+    }
+    
+    .formulario {
+        width: 30rem;
+    }
+    .comprar.container {
+        width: 43rem;
+        margin-top: 3rem;
+        position: relative;
+    }
+
+    .comprar__texto.texto {
+        padding-left: 6rem;
+        margin-top: 2rem;
+    }
+    .comprar__texto.texto::after {
+        content: "";
+        background-image: url(../img/icones/carrinho-pagamento.svg);        
+        background-size: cover;
+        position: absolute;
+        height: 72px;
+        width: 72px;
+        left: 1rem;
+        top: 4.5rem;        
+    }
+
+    .formulario__legenda {
+        font-family: var(--familia-titulo-destaque);
+        font-size: var(--tamanho-titulo-destaque);
+        font-weight: var(--peso-titulo-destaque);
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .titulo--resumo {
+        font-size: var(--tamanho-titulo-destaque);
+    }
+
+    .botao__menor {
+        width: 17.5rem;
+    }
+    .formulario .input {
+        margin-bottom: 2rem;
+    }
+
+    form input:nth-child(7) {
+        width: calc(40% - 1rem);
+    }
+
+    form input:nth-child(8) {
+        width: calc(60% - 1rem);
+    } 
+    
+    form input:nth-child(9) {
+        width: calc(60% - 1rem);
+    }
+    
+    form input:nth-child(10) {
+        width: calc(40% - 1rem);
+    }
+
+    form input:nth-child(14) {
+        width: calc(60% - 1rem);
+    }
+    
+    form input:nth-child(15) {
+        width: calc(40% - 1rem);
+    } 
+}

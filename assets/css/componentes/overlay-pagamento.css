@@ -49,3 +49,23 @@
     from { opacity:0} 
     to { opacity:1}
 }
+
+
+@media screen and (min-width: 1200px) {
+   .overlay {
+       width: 49rem;
+       height: 34.5rem;
+       padding-bottom: 0;
+       background-image: url(../../img/splash-concluido1200.svg);
+       background-position: top right -3rem;
+   }
+
+   .overlay--ilustracao {
+        width: 12.5rem;
+   }
+
+   .overlay-texto {
+    width: 36.5rem;
+    margin: auto;
+   }
+}

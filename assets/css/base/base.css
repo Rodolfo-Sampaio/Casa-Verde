@@ -3,13 +3,28 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden
 }
 
 body {
     font-family: var(--familia-corpo);
     font-size: var(--tamanho-corpo);
-    color: var(--cinza);
+    color: var(--cinza);   
+}
 
+body.body__home {
+    background: url(../../img/fundo-textura.png), url(../../img/fundo-linhas.png);
+    background-repeat: no-repeat, repeat;
+    background-size: cover, auto;    
+}
+
+body.body__produto {
+    background: url(../../img/fundo-textura.png), url(../../img/fundo-linhas.png);
+    background-repeat: no-repeat, repeat;
+    background-size: cover, auto;    
+}
+
+body.body__pagamento {
     background: url(../../img/fundo-textura.png), url(../../img/fundo-linhas.png);
     background-repeat: no-repeat, repeat;
     background-size: cover, auto;    
@@ -29,7 +44,8 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-    body {
+
+    body.body__home {
         background: url(../../img/splash-depoimento.svg), 
                     url(../../img/splash-chamada1200.svg), 
                     url(../../img/fundo-linhas.png), 
@@ -40,7 +56,25 @@ body {
     }
     .centro {
         width: 1200px;
-    }    
+    }
+    
+    body.body__produto {
+        background: url(../../img/splash-depoimento.svg), 
+                    url(../../img/splash-produto1200.svg), 
+                    url(../../img/fundo-linhas.png), 
+                    url(../../img/fundo-textura.png);
+        background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+        background-size: 600px 600px, auto, auto, cover;
+        background-position: top 1430px left -100px, left 0 top 80px, 0, 0;
+    }
+
+    body.body__pagamento {
+        background: url(../../img/fundo-linhas.png), 
+                    url(../../img/fundo-textura.png);
+        background-repeat: repeat, no-repeat;
+        background-size: auto, cover;
+        background-position: 0, 0;
+    }
 }
 
 .titulo {

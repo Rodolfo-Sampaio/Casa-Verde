@@ -9,7 +9,10 @@
         <link rel="stylesheet" href="assets/css/base/base.css">
         <link rel="stylesheet" href="assets/css/componentes/cabecalho.css">
         <link rel="stylesheet" href="assets/css/comprar.css">
+        <link rel="stylesheet" href="assets/css/chamada.css">
+        <link rel="stylesheet" href="assets/css/depoimento.css">
         <link rel="stylesheet" href="assets/css/componentes/produto.css">
+        <link rel="stylesheet" href="assets/css/ofertas.css">
         <link rel="stylesheet" href="assets/css/componentes/input.css">
         <link rel="stylesheet" href="assets/css/componentes/botoes.css">
         <link rel="stylesheet" href="assets/css/componentes/cartao.css">
@@ -17,12 +20,26 @@
         <link rel="stylesheet" href="assets/css/componentes/snackbar.css">
         <link rel="stylesheet" href="assets/css/componentes/modal.css">
         <link rel="stylesheet" href="assets/css/componentes/rodape.css">
+
     </head>
-    <body>
+    <body class="body__produto">
         <header class="cabecalho container">
-            <a href="index.html"><img src="assets/img/logo.svg" alt="Logo da Casa Verde" class="cabecalho__logo"></a>
-            <a href="#" aria-label="Meu carrinho de compras">
-                <img src="assets/img/icones/carrinho.svg" alt="Ícone do carrinho de compras" id="myBtn" class="cabecalho__carrinho"></a>
+            <div class="centro"> 
+                <a href="index.html"><img src="assets/img/logo.svg" alt="Logo da Casa Verde" class="cabecalho__logo"></a>
+                <a href="#" aria-label="Meu carrinho de compras">
+                    <img src="assets/img/icones/carrinho.svg" alt="Ícone do carrinho de compras" id="myBtn2" class="cabecalho__carrinho">
+                </a>
+
+                <nav class="cabecalho__menu">
+                    <ul class="menu__list">
+                        <li class="menu__links"><a href="#" class="menu__link">Como fazer</a></li>
+                        <li class="menu__links"><a href="#produtos" class="menu__link">Produtos</a></li>
+                        <li class="menu__links"><a href="#depoimentos" class="menu__link">Depoimentos</a></li>
+                        <li class="menu__links"><a href="index.html#videos" class="menu__link">Vídeos</a></li>
+                        <li class="menu__links"><a href="#" class="menu__link" id="myBtn">Meu carrinho</a></li>
+                    </ul>
+                </nav>
+            </div>
 
             <span id="myModal" class=" modal ">
                 <div class="modal-content">         
@@ -93,96 +110,180 @@
                             <p>Subtotal</p>
                             <p>R$70,00</p>
                         </div>
-                        <a href="pagamento_mobile.html"><button  class="botao">Finalizar compra</button></a>
+                        <a href="pagamento.html"><button  class="botao">Finalizar compra</button></a>
                     </div>
                 </div>
             </span>
         </header>
         <main>
             <section class="comprar container">
-                <span class="titulo--destaque">Cordyline fruticosa</span>
-                <p class="produto__preco">R$ 20,00</p>
-                <p class="comprar__texto texto">Sed arcu risus, posuere viverra imperdiet eu, commodo interdum enim. Suspendisse finibus, quam dictum vestibulum tristique, nisi lectus luctus tellus, eget faucibus</p>
-                <img src="assets/img/Detalhe-do-produto-02.png" alt="Foto do Produto">
-                <button class="botao">Comprar agora</button>
-                <button class="botao botao--alternativo" onclick="myFunction()">Adicionar ao carrinho</button>
-                <div class="snackbar">
-                    <div id="snackbar" >
-                        <p class="texto texto__add">Produto adicionado ao carrinho</p>
-                        <a href="pagamento_mobile.html"><p class="texto texto__pagamento">Ir para o pagamento</p></a>
+                <div class="centro">
+                    <img src="assets/img/Detalhe-do-produto-03.png" alt="Foto do Produto" class="comprar__img--desk">
+                    <div class="comprar__position">
+                        <span class="comprar titulo--destaque">Cordyline fruticosa</span>
+                        <p class="produto__preco">R$ 20,00</p>
+                        <p class="comprar__texto texto">Sed arcu risus, posuere viverra imperdiet eu, commodo interdum enim. Suspendisse finibus, quam dictum vestibulum tristique, nisi lectus luctus tellus, eget faucibus</p>
+                        <img src="assets/img/Detalhe-do-produto-02.png" alt="Foto do Produto" class="comprar__img--mobile">
+                        <div class="comprar__botoes">
+                            <button class="botao">Comprar agora</button>
+                            <button class="botao botao--alternativo" onclick="myFunction()">Adicionar ao carrinho</button>
+                        </div>
                     </div>
                 </div>
             </section>
 
+                <div id="snackbar" >
+                    <p class="texto texto__add">Produto adicionado ao carrinho</p>
+                    <a href="pagamento.html"><p class="texto texto__pagamento">Ir para o pagamento</p></a>
+                </div>
+
             <section class="descricao cartao">
-                <span class="titulo--destaque descricao__titulo">Descrição do produto</span>
-                <input type="checkbox" id="leia-mais" class="descricao__botao">
-                <p class="descricao__texto texto texto__menos">É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de...</p>
-                <p class="descricao__texto texto texto__mais">É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui",</p>
-                <label for="leia-mais" class="invisivel">
-                    <p class="descricao__leiamais texto">Leia mais</p>                
-                </label>      
-                <label for="leia-mais" class="visivel">
-                    <p class="descricao__leiamais texto">Leia menos</p>                
-                </label>      
+                <div class="centro"> 
+                    <div class="descricao__position">
+                        <span class="titulo--destaque descricao__titulo">Descrição do produto</span>
+                        <input type="checkbox" id="leia-mais" class="descricao__botao">
+                        <p class="descricao__texto texto texto__menos mobile">É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de...</p>
+                        <p class="descricao__texto texto texto__mais mobile">É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui College na Virginia, pesquisou uma das mais obscuras palavras em latim. Consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença, Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes.</p>
+                        <label for="leia-mais" class="invisivel">
+                            <p class="descricao__leiamais texto mobile">Leia mais</p>                
+                        </label>      
+                        <label for="leia-mais" class="visivel">
+                            <p class="descricao__leiamais texto mobile">Leia menos</p>                
+                        </label>
+                        <p class="texto__desktop texto descricao__texto">É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui College na Virginia, pesquisou uma das mais obscuras palavras em latim. 
+
+                        <br><br>
+
+                        Consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença, Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes.
+                            </p>
+                    </div>
+                    <img src="assets/img/descaricao-imagem.png" alt="Vaso transparente com uma planta" class="descricao__imagem">      
+                </div>
             </section>
 
-            <section class="ofertas container">
-                <h2 class="titulo alinhamento--meio">
-                    Conheça nossos
-                    <span class="titulo--destaque">produtos</span>
-                </h2>
-                <ul>
-                    <li class="produto">
-                        <img src="assets/img/produto-04.png" alt="Foto do produto" class="produto__imagem">
-                        <div class="produto__conteudo">
-                            <h3 class="produto__titulo titulo--destaque">Cyperus rotundus</h3>
-                            <p class="produto__preco">R$ 20,00</p>
-                            <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
-                        </div>
-                    </li>
-                    <li class="produto">
-                        <img src="assets/img/produto-05.png" alt="Foto do produto" class="produto__imagem">
-                        <div class="produto__conteudo">
-                            <h3 class="produto__titulo titulo--destaque">Delairea odorata</h3>
-                            <p class="produto__preco">R$ 20,00</p>
-                            <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
-                        </div>
-                    </li>
-                    <li class="produto">
-                        <img src="assets/img/produto-06.png" alt="Foto do produto" class="produto__imagem">
-                        <div class="produto__conteudo">
-                            <h3 class="produto__titulo titulo--destaque">Datura metel</h3>
-                            <p class="produto__preco">R$ 20,00</p>
-                            <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
-                        </div>
-                    </li>
-                </ul>
-            </section>
+            <input type="checkbox" id="muda" class="passa" checked>
+                <input type="checkbox" id="muda2" class="passa2" checked>
 
+                <div class="depo1 depo4">
+                    <section class="depoimento container" id="depoimentos">
+                        <div class="depoimento__centro">
+                            <img src="assets/img/img-Julia-ferraz.png" alt="Imagem da Julia Ferraz sorrindo" class="depoimento__imagem">
+                            <div>
+                                <span class="titulo--destaque depoimento--titulo">Não acredite em nós<br>veja o que os clientes tem a dizer</span>
+                                <p class="chamada__texto texto depoimento-texto">Nullam a orci vitae orci fringilla pulvinar sit amet quis felis. Quisque vel ornare arcu. Fusce urna quam, tempus vitae vehicula et, efficitur non sem. Morbi tincidunt congue lorem eu tempor. Nulla bibendum ligula lorem, vel sollicitudin nibh scelerisque non. Proin ut nisi congue, sodales tellus at, consectetur tellus. Praesent ac elit quis purus congue bibendum. Etiam nec massa ac enim vehicula maximus. Pellentesque semper fermentum maximus. Integer dignissim libero felis, id tempor purus viverra non. Quisque sodales non lacus ut tincidunt. Cras in venenatis leo.”</p>
+                                <div class="depoimento__alinhamento">
+                                    <div>
+                                        <h3 class="depoimento__nome">Juliana Ferraz</h3>
+                                        <p class="depoimento-texto-desde">Cliente desde 2018</p>
+                                    </div>
+                                    <div class="depoimentos__setas">
+                                        <label for="">                                            
+                                            <span class="depoimento__voltar--icone"></span>                                
+                                        </label>  
+                                        <label for="muda2">                                            
+                                            <span class="depoimento__proximo--icone"></span>                                
+                                        </label>                               
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="depo2 depo3">
+                    <section class="depoimento container" id="depoimentos">
+                        <div class="depoimento__centro">
+                            <img src="assets/img/img-clarissa-sampaio.png" alt="Imagem da Julia Ferraz sorrindo" class="depoimento__imagem">
+                            <div>
+                                <span class="titulo--destaque depoimento--titulo">Não acredite em nós<br>veja o que os clientes tem a dizer</span>
+                                <p class="chamada__texto texto depoimento-texto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.<br><br><br></p>
+                                <div class="depoimento__alinhamento">
+                                    <div>
+                                        <h3 class="depoimento__nome">Clarissa Sampaio</h3>
+                                        <p class="depoimento-texto-desde">Cliente desde 2017</p>
+                                    </div>
+                                    
+                                    <div class="depoimentos__setas">
+                                        <label for="muda2">                                            
+                                            <span class="depoimento__proximo--icone2"></span>                                
+                                        </label>                                
+                                        <label for="">                                            
+                                            <span class="depoimento__voltar--icone2"></span>                                
+                                        </label>                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>                    
+                </div>
+
+
+            <section class="ofertas container ofertas-produto" id="produtos">
+                <div class="oferta__centro">
+                    <h2 class="titulo alinhamento--meio">
+                        Conheça produtos
+                        <span class="titulo--destaque titulo--destaque-desk">similares</span>
+                    </h2>
+                    <ul class="oferta__lista">
+                        <li class="produto">                                
+                            <img src="assets/img/produto-01.png" alt="Foto do produto" class="produto__imagem">
+                            <div class="produto__conteudo">
+                                <h3 class="produto__titulo titulo--destaque">Ajuga reptans</h3>
+                                <p class="produto__preco">R$ 20,00</p>
+                                <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
+                            </div>                                
+                        </li>
+                        <li class="produto">
+                            <img src="assets/img/produto-05.png" alt="Foto do produto" class="produto__imagem">
+                            <div class="produto__conteudo">
+                                <h3 class="produto__titulo titulo--destaque">Delairea odorata</h3>
+                                <p class="produto__preco">R$ 20,00</p>
+                                <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
+                            </div>
+                        </li>
+                        <li class="produto">
+                            <img src="assets/img/produto-03.png" alt="Foto do produto" class="produto__imagem">
+                            <div class="produto__conteudo">
+                                <h3 class="produto__titulo titulo--destaque">Crassula ovata</h3>
+                                <p class="produto__preco">R$ 20,00</p>
+                                <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
 
         </main>
         
         <footer class="container rodape">
-            <img src="assets/img/logo.svg" alt="Logo da Casa Verde#" class="rodape__logo">
-            <ul class="rodape__social">
-                <li><a href="#" class="rodape__social-midia" title="Facebook"><img src="assets/img/icones/facebook.svg" alt="Ícone do facebook"></a></li>
-                <li><a href="#" class="rodape__social-midia" title="Twitter"><img src="assets/img/icones/twitter.svg" alt="Ícone do twitter"></a></li>
-                <li><a href="#" class="rodape__social-midia" title="Instagram"><img src="assets/img/icones/instagram.svg" alt="Ícone do instagram"></a></li>
-            </ul>
-            <address class="rodape__unidade texto">
-                <span class="rodape__unidade-titulo">Rio de Janeiro</span>
-                Rua Siqueira Campos, 171, 303<br>
-                Copacabana<br>
-                Telefone: (21) 99876-0099
-            </address>
-            <address class="rodape__unidade texto">
-                <span class="rodape__unidade-titulo">São Paulo</span>
-                Rua Anita Garibaldi, 33, 13<br>
-                Sé<br>
-                Telefone: (11) 99875-2201
-            </address>
+            <div class="rodape__alinhamento">
+                <div>
+                    <a href="index.html">
+                        <img src="assets/img/logo.svg" alt="Logo da Casa Verde#" class="rodape__logo">
+                    </a>
+                    <ul class="rodape__social">
+                        <li><a href="#" class="rodape__social-midia" title="Facebook"><img src="assets/img/icones/facebook.svg" alt="Ícone do facebook"></a></li>
+                        <li><a href="#" class="rodape__social-midia" title="Twitter"><img src="assets/img/icones/twitter.svg" alt="Ícone do twitter"></a></li>
+                        <li><a href="#" class="rodape__social-midia" title="Instagram"><img src="assets/img/icones/instagram.svg" alt="Ícone do instagram"></a></li>
+                    </ul>
+                </div>            
+                <address class="rodape__unidade texto">
+                    <span class="rodape__unidade-titulo">Rio de Janeiro</span>
+                    Rua Siqueira Campos, 171, 303<br>
+                    Copacabana<br>
+                    Telefone: (21) 99876-0099
+                </address>
+                <address class="rodape__unidade texto">
+                    <span class="rodape__unidade-titulo">São Paulo</span>
+                    Rua Anita Garibaldi, 33, 13<br>
+                    Sé<br>
+                    Telefone: (11) 99875-2201
+                </address>
+                <img src="assets/img/Ilustracao-rodape.svg" alt="Ilustração de um jardineiro regando plantas" class="rodape__ilustracao">
+            </div>
         </footer>
+        
     </body>
     <script src="assets/js/snackbar.js"></script>
     <script src="assets/js/modal_carrinho.js"></script>

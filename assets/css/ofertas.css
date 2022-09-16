@@ -2,6 +2,10 @@
     padding-bottom: 3.9rem;
 }
 
+.ofertas-produto {
+    padding-bottom: 0;
+}
+
 @media screen and (min-width: 1200px) {
     .oferta__centro {
         margin: auto;
@@ -25,7 +29,9 @@
         font-size: 82px;
         margin-bottom: 2rem;
     }
-
-   
+    
+    .ofertas-produto {
+        padding-bottom: 0;
+    }
 }
 

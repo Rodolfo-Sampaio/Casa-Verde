@@ -34,3 +34,65 @@
 .descricao .visivel, .descricao__botao {
     display: none;
 }
+
+.descricao .centro {
+    display: block;
+}
+
+.descricao__imagem {
+    display: none;
+}
+
+.texto__desktop {
+    display: none;
+}
+
+
+
+@media screen and (min-width:1200px) {
+    .descricao {
+        height: 50rem;
+        width: 100vw;
+        margin: 0;
+    }
+
+    .descricao .centro {
+        display: flex;
+        align-items: center;
+    }
+
+    .descricao__imagem {
+        display: block;
+        width: 30rem;
+    }
+
+    .cartao {
+        justify-content: center;
+    }
+
+    .texto__desktop {
+        display: block;
+        width: 585px;
+        padding-left: 100px;
+        position: relative;
+    }
+
+    .descricao .mobile {
+        display: none;
+    }
+
+    .texto__desktop::before {
+        content: "";
+        background-image: url(../../img/icones/descricao-icone.svg);
+        background-size: cover;
+        position: absolute;
+        height: 72px;
+        width: 72px;
+        left: 0;
+    }
+
+    .descricao__titulo {
+        padding-left: 0rem;
+        margin-bottom: 2rem;
+    }
+}

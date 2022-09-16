@@ -1,8 +1,8 @@
 var overlay = document.getElementById("myoverlay");
 
-var btn2 = document.getElementById("myBtn2");
+var btn3 = document.getElementById("myBtn3");
 
-btn2.onclick = function() {
+btn3.onclick = function() {
   overlay.style.display = "block";
 }
 

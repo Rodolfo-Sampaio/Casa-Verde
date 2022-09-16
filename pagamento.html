@@ -15,13 +15,31 @@
         <link rel="stylesheet" href="assets/css/componentes/overlay-pagamento.css">        
         <link rel="stylesheet" href="assets/css/componentes/cartao.css">
         <link rel="stylesheet" href="assets/css/formulario.css">
+        <link rel="stylesheet" href="assets/css/componentes/descricao.css">
         <link rel="stylesheet" href="assets/css/componentes/rodape.css">
+
+
+
     </head>
-    <body>
+    <body class="body__pagamento">
         <header class="cabecalho container">
-            <a href="index.html"><img src="assets/img/logo.svg" alt="Logo da Casa Verde" class="cabecalho__logo"></a>
-            <a href="#" aria-label="Meu carrinho de compras">
-                <img src="assets/img/icones/carrinho.svg" alt="Ícone do carrinho de compras" id="myBtn" class="cabecalho__carrinho"></a>
+            <div class="centro"> 
+                <a href="index.html"><img src="assets/img/logo.svg" alt="Logo da Casa Verde" class="cabecalho__logo"></a>
+                <a href="#" aria-label="Meu carrinho de compras">
+                    <img src="assets/img/icones/carrinho.svg" alt="Ícone do carrinho de compras" id="myBtn2" class="cabecalho__carrinho">
+                </a>
+
+                <nav class="cabecalho__menu">
+                    <ul class="menu__list">
+                        <li class="menu__links"><a href="#" class="menu__link">Como fazer</a></li>
+                        <li class="menu__links"><a href="index.html#produtos" class="menu__link">Produtos</a></li>
+                        <li class="menu__links"><a href="index.html#depoimentos" class="menu__link">Depoimentos</a></li>
+                        <li class="menu__links"><a href="index.html#videos" class="menu__link">Vídeos</a></li>
+                        <li class="menu__links"><a href="#" class="menu__link" id="myBtn">Meu carrinho</a></li>
+                    </ul>
+                </nav>
+            </div>
+                       
 
             <span id="myModal" class=" modal ">
                 <div class="modal-content">         
@@ -92,17 +110,15 @@
                             <p>Subtotal</p>
                             <p>R$70,00</p>
                         </div>
-                        <a href="pagamento_mobile.html"><button class="botao">Finalizar compra</button></a>
+                        <a href="pagamento.html"><button  class="botao modal__botao">Finalizar compra</button></a>
                     </div>
                 </div>
             </span>
         </header>
 
-        <main>
-            <div class="cartao_resumo">
-               
-                    <span class="titulo--destaque alinhamento--meio" >Resumo do pedido</span>
-                 
+        <main class="formulario__resumo">
+            <div class="cartao_resumo">               
+                    <span class="titulo--destaque titulo" >Resumo do pedido</span>                 
                 <ul>
                     <li class="produto__carrinho resumo">
                         <img src="assets/img/produto-carrinho-02.png" alt="Foto produto no carrinho" class="foto-produto">
@@ -169,65 +185,75 @@
                 </div>
             </div>
 
-            <section class="comprar container">
-                <span class="titulo--destaque">Finalizar pedido</span>
-                <p class="comprar__texto texto">Insira suas informações abaixo e você receberá um e-mail com os detalhes da sua compra. Assim que o pagamento for processado você receberá seu produto em sua casa em até 7 dias úteis.</p>
-            </section>
+            <div>
+                <section class="comprar container">
+                    <span class="titulo--destaque descricao__titulo">Finalizar pedido</span>
+                    <p class="comprar__texto texto">Insira suas informações abaixo e você receberá um e-mail com os detalhes da sua compra. Assim que o pagamento for processado você receberá seu produto em sua casa em até 7 dias úteis.</p>
+                </section>
+    
+                <form class="container formulario">
+                    <legend class="formulario__legenda">Informações</legend>                
+                        <input type="text" class="input" placeholder="Nome"  aria-label="Nome">
+                        <input type="email" class="input" placeholder="E-mail"  aria-label="E-mail">
+                    <legend class="formulario__legenda">Endereço de entrega</legend>
+                        <input type="number" class="input" placeholder="CEP"  aria-label="CEP">
+                        <input type="text" class="input" placeholder="Rua / Avenida"  aria-label="Rua / Avenida">
+                        <input type="number" class="input half" placeholder="Número"  aria-label="Número">
+                        <input type="text" class="input half" placeholder="Complemento" aria-label="Complemento">
+                        <input type="text" class="input half" placeholder="Cidade"  aria-label="Cidade">
+                        <input type="text" class="input half" placeholder="Estado"  aria-label="Estado">
+                    <legend class="formulario__legenda">Pagamento</legend>
+                        <input type="number" class="input" placeholder="Número do cartão"  aria-label="Número do cartão">
+                        <input type="text" class="input" placeholder="Nome do titular do cartão"  aria-label="Nome do titular do cartão">
+                        <input placeholder="Validade" class="input half" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  aria-label="Validade do cartão"/>
+                        <input type="number" class="input half" placeholder="CVV"  aria-label="CVV">
+                        <input type="number" class="input" placeholder="CPF do titular do cartão"  aria-label="CPF do titular do cartão">
+                        <input type="number" class="input" placeholder="Número de parcelas" aria-label="Número de parcelas">
+                        <a href="#" class="botao botao__menor" id="myBtn3">Finalizar pagamento</a>                              
+                </form>
+                <div id="myoverlay">  
+                    <div id="text">
+                        <div  class="container overlay">
+                            <img src="assets/img/ilustração_pedido_concluido.svg" alt="Ilustração pedido concluído" class="overlay--ilustracao closeoverlay">         
+                            <h2 class="titulo--destaque alinhamento--meio">Pedido concluído com sucesso</h2>
+                            <p class="texto overlay-texto alinhamento--meio">Seu pedido foi efetuado com sucesso. Fique de olho no seu e-mail que você receberá uma mensagem com os detalhes da sua compra. Seu pedido chegará em sua casa em até 7 dias úteis.</p>
+                            <a href="index.html"><button class="botao botao__menor">Voltar para a tela inicial</button></a>                    
+                            
+                        </div>
+                    </div>       
+                </div>                
+            </div>
 
-            <form class="container fomulario">
-                <legend class="formulario__legenda">Informações</legend>                
-                    <input type="text" class="input" placeholder="Nome"  aria-label="Nome">
-                    <input type="email" class="input" placeholder="E-mail"  aria-label="E-mail">
-                <legend class="formulario__legenda">Endereço de entrega</legend>
-                    <input type="number" class="input" placeholder="CEP"  aria-label="CEP">
-                    <input type="text" class="input" placeholder="Rua / Avenida"  aria-label="Rua / Avenida">
-                    <input type="number" class="input half" placeholder="Número"  aria-label="Número">
-                    <input type="text" class="input half" placeholder="Complemento" aria-label="Complemento">
-                    <input type="text" class="input half" placeholder="Cidade"  aria-label="Cidade">
-                    <input type="text" class="input half" placeholder="Estado"  aria-label="Estado">
-                <legend class="formulario__legenda">Pagamento</legend>
-                    <input type="number" class="input" placeholder="Número do cartão"  aria-label="Número do cartão">
-                    <input type="text" class="input" placeholder="Nome do titular do cartão"  aria-label="Nome do titular do cartão">
-                    <input placeholder="Validade" class="input half" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  aria-label="Validade do cartão"/>
-                    <input type="number" class="input half" placeholder="CVV"  aria-label="CVV">
-                    <input type="number" class="input" placeholder="CPF do titular do cartão"  aria-label="CPF do titular do cartão">
-                    <input type="number" class="input" placeholder="Número de parcelas" aria-label="Número de parcelas">
-                    <a href="#" class="botao" id="myBtn2">Finalizar pagamento</a>                              
-            </form>
 
-            <div id="myoverlay">  
-                <div id="text">
-                    <div  class="container overlay">
-                        <img src="assets/img/ilustração_pedido_concluido.svg" alt="Ilustração pedido concluído" class="overlay--ilustracao closeoverlay">         
-                        <h2 class="titulo--destaque alinhamento--meio">Pedido concluído com sucesso</h2>
-                        <p class="texto overlay-texto alinhamento--meio">Seu pedido foi efetuado com sucesso. Fique de olho no seu e-mail que você receberá uma mensagem com os detalhes da sua compra. Seu pedido chegará em sua casa em até 7 dias úteis.</p>
-                        <a href="index.html"><button class="botao">Voltar para a tela inicial</button></a>                    
-                        
-                    </div>
-                </div>       
-            </div>                
 
         </main>    
 
         <footer class="container rodape">
-            <img src="assets/img/logo.svg" alt="Logo da Casa Verde#" class="rodape__logo">
-            <ul class="rodape__social">
-                <li><a href="#" class="rodape__social-midia" title="Facebook"><img src="assets/img/icones/facebook.svg" alt="Ícone do facebook"></a></li>
-                <li><a href="#" class="rodape__social-midia" title="Twitter"><img src="assets/img/icones/twitter.svg" alt="Ícone do twitter"></a></li>
-                <li><a href="#" class="rodape__social-midia" title="Instagram"><img src="assets/img/icones/instagram.svg" alt="Ícone do instagram" ></a></li>
-            </ul>
-            <address class="rodape__unidade texto">
-                <span class="rodape__unidade-titulo">Rio de Janeiro</span>
-                Rua Siqueira Campos, 171, 303<br>
-                Copacabana<br>
-                Telefone: (21) 99876-0099
-            </address>
-            <address class="rodape__unidade texto">
-                <span class="rodape__unidade-titulo">São Paulo</span>
-                Rua Anita Garibaldi, 33, 13<br>
-                Sé<br>
-                Telefone: (11) 99875-2201
-            </address>
+            <div class="rodape__alinhamento">
+                <div>
+                    <a href="index.html">
+                        <img src="assets/img/logo.svg" alt="Logo da Casa Verde#" class="rodape__logo">
+                    </a>
+                    <ul class="rodape__social">
+                        <li><a href="#" class="rodape__social-midia" title="Facebook"><img src="assets/img/icones/facebook.svg" alt="Ícone do facebook"></a></li>
+                        <li><a href="#" class="rodape__social-midia" title="Twitter"><img src="assets/img/icones/twitter.svg" alt="Ícone do twitter"></a></li>
+                        <li><a href="#" class="rodape__social-midia" title="Instagram"><img src="assets/img/icones/instagram.svg" alt="Ícone do instagram"></a></li>
+                    </ul>
+                </div>            
+                <address class="rodape__unidade texto">
+                    <span class="rodape__unidade-titulo">Rio de Janeiro</span>
+                    Rua Siqueira Campos, 171, 303<br>
+                    Copacabana<br>
+                    Telefone: (21) 99876-0099
+                </address>
+                <address class="rodape__unidade texto">
+                    <span class="rodape__unidade-titulo">São Paulo</span>
+                    Rua Anita Garibaldi, 33, 13<br>
+                    Sé<br>
+                    Telefone: (11) 99875-2201
+                </address>
+                <img src="assets/img/Ilustracao-rodape.svg" alt="Ilustração de um jardineiro regando plantas" class="rodape__ilustracao">
+            </div>
         </footer>
         
     </body>

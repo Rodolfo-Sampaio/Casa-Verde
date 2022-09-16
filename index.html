@@ -21,10 +21,10 @@
         <link rel="stylesheet" href="assets/css/componentes/video.css">    
         <link rel="stylesheet" href="assets/css/componentes/rodape.css">
     </head>
-    <body>
+    <body class="body__home">
         <header class="cabecalho container">
             <div class="centro"> 
-                <a href="index.html"><img src="assets/img/logo.svg" alt="Logo da Casa Verde" class="cabecalho__logo"></a>
+                <a href="index.html" id="home"><img src="assets/img/logo.svg" alt="Logo da Casa Verde" class="cabecalho__logo"></a>
                 <a href="#" aria-label="Meu carrinho de compras">
                     <img src="assets/img/icones/carrinho.svg" alt="Ícone do carrinho de compras" id="myBtn2" class="cabecalho__carrinho">
                 </a>
@@ -110,7 +110,7 @@
                             <p>Subtotal</p>
                             <p>R$70,00</p>
                         </div>
-                        <a href="pagamento_mobile.html"><button  class="botao modal__botao">Finalizar compra</button></a>
+                        <a href="pagamento.html"><button  class="botao modal__botao">Finalizar compra</button></a>
                     </div>
                 </div>
             </span>
@@ -218,26 +218,62 @@
                     </div>
                 </section>
 
-                <section class="depoimento container" id="depoimentos">
-                    <div class="depoimento__centro">
-                        <img src="assets/img/img-Julia-ferraz.png" alt="Imagem da Julia Ferraz sorrindo" class="depoimento__imagem">
-                        <div>
-                            <span class="titulo--destaque depoimento--titulo">Não acredite em nós<br>veja o que os clientes tem a dizer</span>
-                            <p class="chamada__texto texto depoimento-texto">Nullam a orci vitae orci fringilla pulvinar sit amet quis felis. Quisque vel ornare arcu. Fusce urna quam, tempus vitae vehicula et, efficitur non sem. Morbi tincidunt congue lorem eu tempor. Nulla bibendum ligula lorem, vel sollicitudin nibh scelerisque non. Proin ut nisi congue, sodales tellus at, consectetur tellus. Praesent ac elit quis purus congue bibendum. Etiam nec massa ac enim vehicula maximus. Pellentesque semper fermentum maximus. Integer dignissim libero felis, id tempor purus viverra non. Quisque sodales non lacus ut tincidunt. Cras in venenatis leo.”</p>
-                            <div class="depoimento__alinhamento">
-                                <div>
-                                    <h3 class="depoimento__nome">Juliana Ferraz</h3>
-                                    <p class="depoimento-texto-desde">Cliente desde 2018</p>
-                                </div>
-                                <div class="depoimentos__setas">
-                                    <a href="#" class="depoimento__voltar"><span class="depoimento__voltar--icone"></span></a>                                
-                                    <a href="#" class="depoimento__proximo"><span class="depoimento__proximo--icone"></span></a>                                
+                <input type="checkbox" id="muda" class="passa" checked>
+                <input type="checkbox" id="muda2" class="passa2" checked>
+
+                <div class="depo1 depo4">
+                    <section class="depoimento container" id="depoimentos">
+                        <div class="depoimento__centro">
+                            <img src="assets/img/img-Julia-ferraz.png" alt="Imagem da Julia Ferraz sorrindo" class="depoimento__imagem">
+                            <div>
+                                <span class="titulo--destaque depoimento--titulo">Não acredite em nós<br>veja o que os clientes tem a dizer</span>
+                                <p class="chamada__texto texto depoimento-texto">Nullam a orci vitae orci fringilla pulvinar sit amet quis felis. Quisque vel ornare arcu. Fusce urna quam, tempus vitae vehicula et, efficitur non sem. Morbi tincidunt congue lorem eu tempor. Nulla bibendum ligula lorem, vel sollicitudin nibh scelerisque non. Proin ut nisi congue, sodales tellus at, consectetur tellus. Praesent ac elit quis purus congue bibendum. Etiam nec massa ac enim vehicula maximus. Pellentesque semper fermentum maximus. Integer dignissim libero felis, id tempor purus viverra non. Quisque sodales non lacus ut tincidunt. Cras in venenatis leo.”</p>
+                                <div class="depoimento__alinhamento">
+                                    <div>
+                                        <h3 class="depoimento__nome">Juliana Ferraz</h3>
+                                        <p class="depoimento-texto-desde">Cliente desde 2018</p>
+                                    </div>
+                                    <div class="depoimentos__setas">
+                                        <label for="">                                            
+                                            <span class="depoimento__voltar--icone"></span>                                
+                                        </label>  
+                                        <label for="muda2">                                            
+                                            <span class="depoimento__proximo--icone"></span>                                
+                                        </label>                               
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
+                </div>
 
-                </section>
+                <div class="depo2 depo3">
+                    <section class="depoimento container" id="depoimentos">
+                        <div class="depoimento__centro">
+                            <img src="assets/img/img-clarissa-sampaio.png" alt="Imagem da Julia Ferraz sorrindo" class="depoimento__imagem">
+                            <div>
+                                <span class="titulo--destaque depoimento--titulo">Não acredite em nós<br>veja o que os clientes tem a dizer</span>
+                                <p class="chamada__texto texto depoimento-texto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.<br><br><br></p>
+                                <div class="depoimento__alinhamento">
+                                    <div>
+                                        <h3 class="depoimento__nome">Clarissa Sampaio</h3>
+                                        <p class="depoimento-texto-desde">Cliente desde 2017</p>
+                                    </div>
+                                    
+                                    <div class="depoimentos__setas">
+                                        <label for="muda2">                                            
+                                            <span class="depoimento__proximo--icone2"></span>                                
+                                        </label>                                
+                                        <label for="">                                            
+                                            <span class="depoimento__voltar--icone2"></span>                                
+                                        </label>                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>                    
+                </div>
+
 
 
                 <section class="container oferta__centro" id="videos">
@@ -274,7 +310,9 @@
         <footer class="container rodape">
             <div class="rodape__alinhamento">
                 <div>
-                    <img src="assets/img/logo.svg" alt="Logo da Casa Verde#" class="rodape__logo">
+                    <a href="#home">
+                        <img src="assets/img/logo.svg" alt="Logo da Casa Verde#" class="rodape__logo">
+                    </a>
                     <ul class="rodape__social">
                         <li><a href="#" class="rodape__social-midia" title="Facebook"><img src="assets/img/icones/facebook.svg" alt="Ícone do facebook"></a></li>
                         <li><a href="#" class="rodape__social-midia" title="Twitter"><img src="assets/img/icones/twitter.svg" alt="Ícone do twitter"></a></li>

@@ -2,8 +2,77 @@
     display: none;
 }
 
-@media screen and (min-width: 1200px) {
+.depo2 {
+    display: none;
+}
 
+.passa {
+    display: none;
+}
+.passa2 {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  
+    .passa:checked ~ .depo1 {
+        display: none;
+        -webkit-transition: opacity 600ms, visibility 600ms;
+            transition: opacity 600ms, visibility 600ms;
+    }
+    
+    .passa:checked ~ .depo2 {
+        display: block;
+        animation: fade 1s;
+    } 
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .passa2:checked ~ .depo3 {
+        display: none;
+        -webkit-transition: opacity 600ms, visibility 600ms;
+            transition: opacity 600ms, visibility 600ms;
+    }
+    
+    .passa2:checked ~ .depo4 {
+        display: block;
+        animation: fade2 1s;
+    } 
+
+    @keyframes fade2 {
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);            
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+            
+        }
+    }
+
+    .depoimento__proximo--icone {
+        cursor: pointer;
+    }
+
+    .passa {
+        display: none;
+    }
+    .passa2 {
+        display: none;
+    }
+    
     .depoimento {
         display: block;
         margin-bottom: 100px;
@@ -76,10 +145,33 @@
         background-repeat: no-repeat;
     }
 
+    .depoimento__voltar--icone2 {
+        display: inline-block;
+
+        width: 0.875rem;
+        height: 0.875rem;
+
+        margin-left: 1.75rem ;
+        background-image: url(../img/icones/seta-depoimento-direita2.svg);
+        background-size: contain;
+    }
+    
+    .depoimento__proximo--icone2 {
+        display: inline-block;
+        
+        width: 71px;
+        height: 14px;
+        
+        margin-left: 1.75rem ;
+        background-image: url(../img/icones/seta-depoimento-esquerda2.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
     .depoimento__alinhamento {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
 }
