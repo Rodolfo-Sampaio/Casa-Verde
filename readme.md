@@ -45,6 +45,6 @@ Veja nosso site adaptável em 🚩[Casa Verde](https://casa-verde-seven.vercel.a
 [Matheus Alberto Marcus](https://www.linkedin.com/in/matheus-alberto-marcus/)
 <br>
 <br>
-### Olá, explorador de código! 👋 Obrigado pela visita no meu GitHub. Se gostou do que viu, que tal um `Follow`? Estamos conectados na mesma vibe. Até mais, e que os códigos sejam sempre a seu favor! 😊💻
+### Olá, explorador de código! 👋 Obrigado pela visita no meu GitHub. Se gostou do que viu, que tal um [`Follow`](https://github.com/Rodolfo-Sampaio)? Estamos conectados na mesma vibe. Até mais, e que os códigos sejam sempre a seu favor! 😊💻
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=3e8bff&height=110&section=footer"/>
